@@ -11,7 +11,7 @@ cat << EOF
 apiVersion: operator.openshift.io/v1alpha1
 kind: ImageContentSourcePolicy
 metadata:
-  name: csi-image
+  name: custom-image-mirror
 spec:
   repositoryDigestMirrors:
 EOF
