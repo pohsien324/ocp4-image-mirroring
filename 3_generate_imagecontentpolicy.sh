@@ -1,3 +1,4 @@
+#!/bin/bash
 NEW_REGISTRY="Your Private Registry"
 #--------------------------------------------
 
