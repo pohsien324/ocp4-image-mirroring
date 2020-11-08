@@ -38,6 +38,7 @@ NEW_REGISTRY="private-registry.example.com"
 ```bash=
 ./3_generate_imagecontentpolicy.sh
 ```
+Output:
 ```bash=
 Generate Image Source Content Policy...
 
