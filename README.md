@@ -1,13 +1,14 @@
 # ocp4-image-mirroring
-These scripts help you push your Container Images to your private registry, and generate the specific [`ImageContentSourcePolicy`](https://docs.openshift.com/container-platform/4.5/openshift_images/image-configuration.html#images-configuration-registry-mirror_image-configuration) for your OpenShift 4 Cluster.
+Bash scripts make the procedure of 
+These scripts automate the procedure of Container Images tagging and pushing, and generate the specific [`ImageContentSourcePolicy`](https://docs.openshift.com/container-platform/4.5/openshift_images/image-configuration.html#images-configuration-registry-mirror_image-configuration) for OpenShift 4 Cluster.
 
-## How to 
+## Quick Start
 1. Clone the repository.
 ```bash=
 git clone https://github.com/pohsienshih/ocp4-image-mirroring.git
 ```
 
-2. Fill the Images which you want to mirror into `image_list` file.
+2. Fill the specific images which you want to mirror into `image_list` file.
 ```bash=
 vim image_list
 ```
@@ -34,7 +35,7 @@ NEW_REGISTRY="private-registry.example.com"
 ```
 > Skip this step if you don't need to push the image.
 
-5. Generate the `ImageContentSourcePolicy`. Use the output to create an `ImageContentSourcePolicy` object.
+5. Generate the specific `ImageContentSourcePolicy`. Use the output to create an `ImageContentSourcePolicy` object.
 ```bash=
 ./3_generate_imagecontentpolicy.sh
 ```
